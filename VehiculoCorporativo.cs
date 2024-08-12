@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab3
+﻿public class VehiculoCorporativo : Vehiculo
 {
-    internal class VehiculoCorporativo
+    public ClienteCorporativo Propietario { get; set; }
+
+    public VehiculoCorporativo(string matricula, string modelo, string tipoCombustible, ClienteCorporativo propietario)
+        : base(matricula, modelo, tipoCombustible)
     {
+        Propietario = propietario;
     }
 }
