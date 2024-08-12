@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab3
+﻿public class Cliente
 {
-    internal class Cliente
+    public string Nombre { get; set; }
+    public string CorreoElectronico { get; set; }
+    public string Direccion { get; set; }
+
+    public Cliente(string nombre, string correoElectronico, string direccion)
     {
+        Nombre = nombre;
+        CorreoElectronico = correoElectronico;
+        Direccion = direccion;
     }
 }
