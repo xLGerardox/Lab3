@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab3
+﻿public class VehiculoPersonal : Vehiculo
 {
-    internal class VehiculoPersonal
+    public VehiculoPersonal(string matricula, string modelo, string tipoCombustible)
+        : base(matricula, modelo, tipoCombustible)
     {
     }
 }
