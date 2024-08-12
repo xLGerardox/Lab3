@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Lab3;
 
-namespace Lab3
+public class ClienteCorporativo : Cliente
 {
-    internal class ClienteCorporativo
+    public float Descuento { get; set; }
+    public List<VehiculoCorporativo> Vehiculos { get; set; }
+
+    public ClienteCorporativo(string nombre, string correoElectronico, string direccion, float descuento)
+        : base(nombre, correoElectronico, direccion)
     {
+        Descuento = descuento;
+        Vehiculos = new List<VehiculoCorporativo>();
     }
 }
+
