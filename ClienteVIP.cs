@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab3
+﻿public class ClienteVIP : Cliente
 {
-    internal class ClienteVIP
+    public float Descuento { get; set; }
+
+    public ClienteVIP(string nombre, string correoElectronico, string direccion, float descuento)
+        : base(nombre, correoElectronico, direccion)
     {
+        Descuento = descuento;
     }
 }
