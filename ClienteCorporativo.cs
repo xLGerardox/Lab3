@@ -1,6 +1,4 @@
-﻿using Lab3;
-
-public class ClienteCorporativo : Cliente
+﻿public class ClienteCorporativo : Cliente
 {
     public float Descuento { get; set; }
     public List<VehiculoCorporativo> Vehiculos { get; set; }
